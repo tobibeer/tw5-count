@@ -1,0 +1,12 @@
+{
+    "title": "$:/plugins/tobibeer/count",
+    "description": "A filter to count titles or check against a specified count",
+    "author": "Tobias Beer",
+    "version": "0.5.0",
+    "core-version": ">=5.1.9",
+    "source": "https://github.com/tobibeer/tw5-count",
+    "documentation": "https://tobibeer.github.io/tw5-count",
+    "plugin-type": "plugin",
+	"requires": "",
+	"list": "readme"
+}

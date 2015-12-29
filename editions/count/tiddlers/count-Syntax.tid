@@ -1,0 +1,56 @@
+created: 20151229123655503
+creator: Tobias Beer
+modified: 20151229132745848
+modifier: Tobias Beer
+title: count-Syntax
+type: text/vnd.tiddlywiki
+
+Without any parameters, the `count[]` filter simply counts input titles and returns the count. In addition, you can use the following operand and suffixes:
+
+!! Operand
+
+If specified, the count will be checked against this ''number'' and return the count, e.g.:
+
+<<` """{{{ a b +[count[2]] }}}""">>
+
+@@.note
+''Note:'' If the count does not match the number, nothing is returned.
+@@
+
+!! Suffixes
+
+Alongside a specified operand, you can use the following comparison modes using either lower-case or upper-case letters:
+
+; eq
+: ''eq''uals — the default comparison, if not otherwise specified
+:: `count:eq[2]`
+
+; neq
+: ''n''ot ''eq''uals
+:: `count:neq[2]`
+
+; gt
+: ''g''reater ''t''han
+:: `count:gt[2]`
+
+; gte
+: ''g''reater ''t''han or ''e''quals
+:: `count:gte[2]`
+
+; lt
+: ''l''ess ''t''han
+:: `count:lt[2]`
+
+; lte
+: ''l''ess ''t''han or ''e''quals
+:: `count:lte[2]`
+
+In addition, you can return ''the input'' titles using the suffix `$` depending on whether or not the comparison is true.
+
+// if count is two, pass titles: //
+
+<<` """{{{ a b +[count:$[2]] }}}""">>
+
+// if count is greater than 1, pass titles: //
+
+<<` """{{{ a b +[count:$ gt[1]] }}}""">>

@@ -1,0 +1,13 @@
+created: 20151229123641163
+creator: Tobias Beer
+modified: 20151229130854633
+modifier: Tobias Beer
+title: count-Info
+type: text/vnd.tiddlywiki
+
+The plugin $:/plugins/tobibeer/count provides:
+
+; count[]
+: a filter to count input titles or compare the count against a number specified in the operand
+
+<<plugin-docs-cp count>>

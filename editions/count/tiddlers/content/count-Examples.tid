@@ -1,0 +1,65 @@
+created: 20151229124840016
+creator: Tobias Beer
+modified: 20151229132940191
+modifier: Tobias Beer
+title: count-Examples
+type: text/vnd.tiddlywiki
+
+!! Simple Count
+
+<<` """{{{ [[a]count[]] }}} """>>
+
+!! Count As Independent Run
+
+<<` """{{{ a b c +[count[]] }}} """>>
+
+!! Return Count If Matching
+
+<<` """{{{ a b c +[count[3]] }}} """>>
+
+!! Not Returning Count If Not Matching
+
+<<` """<$list filter="a b c +[count[1]]"
+emptyMessage="not matching count"/>""">>
+
+!! Count Comparison
+
+<<` """{{{ a b c +[count:gt[1]] }}} """>>
+
+!! Comparison Not True
+
+<<` """<$list filter="a b c +[count:LT[3]]"
+emptyMessage="got at least three"/>""">>
+
+!! Return Input Titles If Matching Count
+
+<<` """{{{ a b c +[count:$[3]] }}} """>>
+
+!! Not Returning Titles If Not Matching Count
+
+<<` """<$list filter="a b c +[count:$[1]]"
+emptyMessage="not matching count"/>""">>
+
+!! Return Input Titles If Comparison True
+
+<<` """{{{ a b c +[count:$ gt[1]] }}} """>>
+
+!! Not Returning Titles If Comparison False
+
+<<` """<$list filter="a b c +[count:$ lt[3]]"
+emptyMessage="got at least three"/>""">>
+
+!! Zero Test
+
+<<` """{{{ [tag[doesntexist]count[0]] }}} """>>
+
+<<` """<$list filter="[tag[doesntexist]count:$[0]]"
+emptyMessage="no matching items indeed"/>""">>
+
+!! Invalid Number
+
+<<` """{{{ a b c +[count[foo]] }}} """>>
+
+!! Invalid Comparison
+
+<<` """{{{ a b c +[count:equals[3]] }}} """>>

@@ -1,0 +1,13 @@
+created: 20151229125839517
+creator: Tobias Beer
+modified: 20151229125845859
+modifier: Tobias Beer
+title: count-Install
+type: text/vnd.tiddlywiki
+
+<<plugin-install count>>
+
+!! Version History
+
+; 0.5.0 / 2015-12-29
+: initial version

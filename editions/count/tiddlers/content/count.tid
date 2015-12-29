@@ -1,0 +1,10 @@
+created: 20151229125902267
+creator: Tobias Beer
+modified: 20151229125903377
+modifier: Tobias Beer
+tabs: Info Syntax Examples Install
+tags: Plugins Filters
+title: count
+type: text/vnd.tiddlywiki
+
+<<plugin-docs count>>

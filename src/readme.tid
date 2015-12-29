@@ -1,0 +1,25 @@
+title: $:/plugins/tobibeer/count/readme
+
+The plugin $:/plugins/tobibeer/count provides:
+
+; count[]
+: a filter to count input titles or compare the count against a number specified in the operand
+
+<br>
+
+; documentation / examples / demos...
+: http://tobibeer.github.io/tw5-plugins#count
+
+!! Syntax
+
+; `count[]`
+: simply count input titles
+; `count[<num>]`
+: count and return if equal to `<num>`
+; `count:$[<num>]`
+: count and return input titles if count equals `<num>`
+; `count:gt[<num>]`
+: count and return count if greater than `<num>`
+: compare using any of: `eq` (default), `neq`, `gt`, `gte`, `lt`, `lte`
+; `count:$ gt[<num>]`
+: count and returns input titles if count greater than `<num>`
