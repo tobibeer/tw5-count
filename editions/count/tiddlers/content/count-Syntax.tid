@@ -1,6 +1,6 @@
 created: 20151229123655503
 creator: Tobias Beer
-modified: 20151229134552739
+modified: 20151229134746535
 modifier: Tobias Beer
 title: count-Syntax
 type: text/vnd.tiddlywiki
@@ -47,7 +47,7 @@ You can use the following comparison modes (lower- or upper-case letters) alongs
 
 !!! Passing Input Titles
 
-Depending on whether or not the comparison is true, you can return or pass the ''input titles'' using the ''suffix'' `$`.
+Depending on whether or not the comparison is true, you can have the count filter return or "pass" the ''input titles'' using the ''suffix'' `$` as follows:
 
 // if count is two, pass titles: //
 
