@@ -1,6 +1,6 @@
 created: 20151229123655503
 creator: Tobias Beer
-modified: 20151229134746535
+modified: 20151229160543965
 modifier: Tobias Beer
 title: count-Syntax
 type: text/vnd.tiddlywiki
@@ -14,7 +14,7 @@ If specified, the count will be checked against this ''number'' and return the c
 <<` """{{{ a b +[count[2]] }}}""">>
 
 @@.note
-''Note:'' If the count does not match the number, nothing is returned.
+''Note:'' If the count does not match the number, nothing is returned. You can negate operand comparison using filter negation, see below.
 @@
 
 !! Suffixes
@@ -56,3 +56,25 @@ Depending on whether or not the comparison is true, you can have the count filte
 // if count is greater than 1, pass titles: //
 
 <<` """{{{ a b +[count:$ gt[1]] }}}""">>
+
+!! Negation
+
+With a specified operand, although technically not needed, you can use the prefix `!` to negate the count filter, so you don't have to wrap your mind around formulating the equivalent comparison that corresponds to negation.
+
+// if count is not 1, pass titles: //
+
+<<` """{{{ a b +[!count:$[1]] }}}""">>
+
+// same as above, but using equivalent comparison: //
+
+<<` """{{{ a b +[count:$ neq[1]] }}}""">>
+
+// if count is not less than 3, pass titles: //
+
+<<` """<$list filter="a b +[!count:$ lt[3]]"
+emptyMessage="shown if the count is less than 3"/>""">>
+
+// an equivalent to the above using the equivalent comparison: //
+
+<<` """<$list filter="a b +[count:$ gte[3]]"
+emptyMessage="the count is not 3 or more"/>""">>
