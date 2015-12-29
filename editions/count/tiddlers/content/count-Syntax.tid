@@ -1,6 +1,6 @@
 created: 20151229123655503
 creator: Tobias Beer
-modified: 20151229132745848
+modified: 20151229134552739
 modifier: Tobias Beer
 title: count-Syntax
 type: text/vnd.tiddlywiki
@@ -19,7 +19,7 @@ If specified, the count will be checked against this ''number'' and return the c
 
 !! Suffixes
 
-Alongside a specified operand, you can use the following comparison modes using either lower-case or upper-case letters:
+You can use the following comparison modes (lower- or upper-case letters) alongside a specified numeric operand:
 
 ; eq
 : ''eq''uals — the default comparison, if not otherwise specified
@@ -45,7 +45,9 @@ Alongside a specified operand, you can use the following comparison modes using 
 : ''l''ess ''t''han or ''e''quals
 :: `count:lte[2]`
 
-In addition, you can return ''the input'' titles using the suffix `$` depending on whether or not the comparison is true.
+!!! Passing Input Titles
+
+Depending on whether or not the comparison is true, you can return or pass the ''input titles'' using the ''suffix'' `$`.
 
 // if count is two, pass titles: //
 
