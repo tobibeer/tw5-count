@@ -1,6 +1,6 @@
 created: 20151229123655503
 creator: Tobias Beer
-modified: 20151229160543965
+modified: 20151229173634140
 modifier: Tobias Beer
 title: count-Syntax
 type: text/vnd.tiddlywiki
@@ -74,7 +74,7 @@ With a specified operand, although technically not needed, you can use the prefi
 <<` """<$list filter="a b +[!count:$ lt[3]]"
 emptyMessage="shown if the count is less than 3"/>""">>
 
-// an equivalent to the above using the equivalent comparison: //
+// same as previous, using the equivalent comparison: //
 
 <<` """<$list filter="a b +[count:$ gte[3]]"
 emptyMessage="the count is not 3 or more"/>""">>
